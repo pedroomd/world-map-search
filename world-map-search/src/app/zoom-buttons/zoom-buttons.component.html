@@ -1,0 +1,21 @@
+<button 
+    class="bg-slate-50 text-grey-darkest font-bold p-1 rounded block hover:bg-slate-200" 
+    [disabled]="isZoomInDisabled" 
+    (click)="updateZoomIn()"
+    id="zoomIn"
+    >
+
+    <svg-icon  
+        src="../assets/svgs/plus-circle.svg"
+        [svgStyle]="{'width.px': 30, 'fill':'rgb(150,50,255)'}">
+    </svg-icon>
+
+</button>
+
+<button class=" mt-2 bg-slate-50 text-grey-darkest font-bold p-1 rounded block hover:bg-slate-200" 
+        [disabled]="isZoomOutDisabled" 
+        (click)="updateZoomOut()"
+        id="zoomOut"
+>
+    <svg-icon  src="../assets/svgs/minus-circle.svg" [svgStyle]="{ 'width.px': 30 }"></svg-icon>
+</button>

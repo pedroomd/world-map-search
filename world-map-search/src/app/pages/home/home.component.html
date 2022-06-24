@@ -1,0 +1,22 @@
+<main>
+  <div class="fixed ml-10 bottom-5 right-5 z-10" >
+    <app-zoom-buttons
+      [isZoomInDisabled]="isZoomInDisabled()"
+      [isZoomOutDisabled]="isZoomOutDisabled()"
+      (zoomInClicked)="zoomIn($event)" 
+      (zoomOutClicked)="zoomOut($event)"
+      >
+    </app-zoom-buttons>
+  </div>
+
+  <div class="fixed top-3 right-2 z-10">
+    <app-created-by></app-created-by>
+  </div>
+
+
+  <div class="container" #mapDiv>
+    <app-world-map></app-world-map>
+  </div>
+
+</main>
+

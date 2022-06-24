@@ -1,0 +1,50 @@
+
+<div class="container lg:w-84 mr-2 h-full">
+    <div class="flex items-center justify-around">
+        <h1 class="w-56 font-bold">{{ country.name }}</h1>
+        <img class="pb-3" src="{{'https://flagcdn.com/56x42/' + country.id + '.png'}}" >
+    </div>
+    <table class="w-full text-sm text-left text-gray-500 ">
+        <tbody>
+            <tr class="bg-white border-b-2">
+                <th scope="row" class="bg-slate-100 px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                    Capital
+                </th>
+                <td class="px-6 py-4">
+                    {{ country.capital }}
+                </td>
+            </tr>
+            <tr class="bg-white border-b-2">
+                <th scope="row" class="bg-slate-100 px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                    Continent
+                </th>
+                <td class="px-6 py-4">
+                    {{ country.continent }}
+                </td>
+            </tr>
+            <tr class="bg-white border-b-2">
+                <th scope="row" class="bg-slate-100 px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                    Currency
+                </th>
+                <td class="px-6 py-4">
+                    {{ country.currency }}
+                </td>
+            </tr>
+            <tr class="bg-white border-b-2">
+                <th scope="row" class="bg-slate-100 px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                    Phone
+                </th>
+                <td class="px-6 py-4">
+                    +{{ country.phone }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="mt-4">
+        <a target="_blank" class="text-center text-blue-600 outline-none " href="{{'https://en.wikipedia.org/wiki/' + country.name}}"> 
+            <p>More info...</p>
+        </a>
+    </div>
+      
+    
+</div>

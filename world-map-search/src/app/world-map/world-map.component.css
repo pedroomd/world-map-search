@@ -1,0 +1,11 @@
+svg path{
+    fill: 	rgb(113, 211, 100);
+    stroke: rgb(97, 97, 97);
+    stroke-width: .25;
+}
+
+svg path:hover{
+    fill: rgb(72, 156, 72);;
+    transition: 0.5s;
+    cursor: pointer;
+}
